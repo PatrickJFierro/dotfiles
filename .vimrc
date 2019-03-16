@@ -12,6 +12,7 @@ Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'valloric/youcompleteme'
 Plug 'tpope/vim-surround'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -19,11 +20,12 @@ call plug#end()
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 
+
 " Plugin Hotkeys
 nmap <F8> :TagbarToggle<CR>
 nmap <F5> :NERDTreeToggle<CR>
 
-" Add colemak specific navigation hotkeys
+" Colemak Hotkeys
 for i in range(97,122)
   let c = nr2char(i)
   exec "map \e".c." <M-".c.">"
@@ -51,6 +53,7 @@ noremap <RIGHT> <Nop>
 vnoremap <RIGHT> <Nop>
 inoremap <RIGHT> <Nop>
 
+
 " Syntax settings
 set tabstop=4
 set shiftwidth=4
@@ -61,5 +64,7 @@ set number
 set laststatus=2
 set incsearch
 set hlsearch
+
+set encoding=UTF-8
 
 syntax on
