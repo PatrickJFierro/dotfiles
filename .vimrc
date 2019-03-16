@@ -10,9 +10,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
-Plug 'valloric/youcompleteme'
 Plug 'tpope/vim-surround'
 Plug 'ryanoasis/vim-devicons'
+Plug 'fcpg/vim-orbital'
 
 call plug#end()
 
@@ -20,6 +20,9 @@ call plug#end()
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 
+" NerdTree Settings
+let NERDTreeMinimalUI=1
+let NERDTreeShowHidden=1
 
 " Plugin Hotkeys
 nmap <F8> :TagbarToggle<CR>
@@ -54,7 +57,9 @@ vnoremap <RIGHT> <Nop>
 inoremap <RIGHT> <Nop>
 
 
-" Syntax settings
+" Vim Settings
+set timeoutlen=1000 ttimeoutlen=0
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -68,3 +73,5 @@ set hlsearch
 set encoding=UTF-8
 
 syntax on
+
+colorscheme orbital
