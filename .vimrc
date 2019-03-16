@@ -30,9 +30,9 @@ nmap <F5> :NERDTreeToggle<CR>
 
 " Colemak Hotkeys
 for i in range(97,122)
-  let c = nr2char(i)
-  exec "map \e".c." <M-".c.">"
-  exec "map! \e".c." <M-".c.">"
+    let c = nr2char(i)
+    exec "map \e".c." <M-".c.">"
+    exec "map! \e".c." <M-".c.">"
 endfor
 
 nnoremap <M-h> <Left>|
@@ -61,8 +61,10 @@ inoremap <RIGHT> <Nop>
 set timeoutlen=1000 ttimeoutlen=0
 
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set expandtab
+set smarttab
 
 set number
 
