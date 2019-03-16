@@ -77,3 +77,4 @@ set encoding=UTF-8
 syntax on
 
 colorscheme orbital
+hi Normal guibg=NONE ctermbg=NONE
