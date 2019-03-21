@@ -58,7 +58,7 @@ inoremap <RIGHT> <Nop>
 
 
 " Vim Settings
-set timeoutlen=1000 ttimeoutlen=0
+set timeoutlen=0 ttimeoutlen=0
 
 set tabstop=4
 set softtabstop=4
