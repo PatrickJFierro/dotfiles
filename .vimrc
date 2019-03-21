@@ -12,7 +12,7 @@ Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-surround'
 Plug 'ryanoasis/vim-devicons'
-Plug 'fcpg/vim-orbital'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -58,7 +58,8 @@ inoremap <RIGHT> <Nop>
 
 
 " Vim Settings
-set timeoutlen=0 ttimeoutlen=0
+set timeoutlen=0
+set ttimeoutlen=0
 
 set tabstop=4
 set softtabstop=4
@@ -76,5 +77,12 @@ set encoding=UTF-8
 
 syntax on
 
-colorscheme orbital
-hi Normal guibg=NONE ctermbg=NONE
+" Appearance Settings
+set termguicolors
+let g:gruvbox_sign_column='dark0_hard'
+let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_italic=1
+let g:gruvbox_invert_selection=0
+set background=dark
+
+colorscheme gruvbox
