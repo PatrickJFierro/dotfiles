@@ -40,6 +40,11 @@ nnoremap <M-n> <Down>|
 nnoremap <M-e> <Up>|
 nnoremap <M-i> <Right>|
 
+nnoremap <C-h> <C-w><Left>
+nnoremap <C-n> <C-w><Down>
+nnoremap <C-e> <C-w><Up>
+nnoremap <C-i> <C-w><Right>
+
 filetype plugin indent on
 
 " Hard mode
