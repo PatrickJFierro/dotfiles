@@ -72,7 +72,12 @@ set shiftwidth=4
 set expandtab
 set smarttab
 
-set number
+set number relativenumber
+augroup numbertoggle
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+    autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
+augroup END
 
 set laststatus=2
 set incsearch
