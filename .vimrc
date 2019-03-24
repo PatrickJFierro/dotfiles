@@ -5,13 +5,12 @@ call plug#begin('~/.vim/vim-plug-plugins')
 
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/syntastic'
-Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-surround'
-Plug 'ryanoasis/vim-devicons'
+Plug 'majutsushi/tagbar'
 Plug 'morhetz/gruvbox'
 
 call plug#end()
@@ -24,9 +23,10 @@ let g:syntastic_enable_signs=1
 let NERDTreeMinimalUI=1
 let NERDTreeShowHidden=1
 
-" Plugin Hotkeys
-nmap <F8> :TagbarToggle<CR>
-nmap <F5> :NERDTreeToggle<CR>
+" Hotkeys
+map <Space> <Leader>
+nnoremap <Leader>t :TagbarToggle<CR>
+nnoremap <Leader>n :NERDTreeToggle<CR>
 
 " Colemak Hotkeys
 for i in range(97,122)
@@ -63,14 +63,12 @@ inoremap <RIGHT> <Nop>
 
 
 " Vim Settings
-set timeoutlen=0
-set ttimeoutlen=0
-
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
-set smarttab
+set ttimeout
+augroup FastEscape
+    autocmd!
+    au InsertEnter * set timeoutlen=0
+    au InsertLeave * set timeoutlen=1000
+augroup END
 
 set number relativenumber
 augroup numbertoggle
@@ -78,6 +76,12 @@ augroup numbertoggle
     autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
     autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
 augroup END
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab
 
 set laststatus=2
 set incsearch
