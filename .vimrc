@@ -25,8 +25,8 @@ let NERDTreeShowHidden=1
 
 " Hotkeys
 map <Space> <Leader>
-nnoremap <Leader>t :TagbarToggle<CR>
-nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>T :TagbarToggle<CR>
+nnoremap <Leader>N :NERDTreeToggle<CR>
 nnoremap <Leader>p :FZF<CR>
 
 " Colemak Hotkeys
@@ -36,10 +36,15 @@ for i in range(97,122)
     exec "map! \e".c." <M-".c.">"
 endfor
 
-nnoremap <M-h> <Left>|
-nnoremap <M-n> <Down>|
-nnoremap <M-e> <Up>|
-nnoremap <M-i> <Right>|
+nnoremap <M-h> <Left>
+nnoremap <M-n> <Down>
+nnoremap <M-e> <Up>
+nnoremap <M-i> <Right>
+
+nnoremap <Leader>h <Left>
+nnoremap <Leader>n <Down>
+nnoremap <Leader>e <Up>
+nnoremap <Leader>i <Right>
 
 nnoremap <C-h> <C-w><Left>
 nnoremap <C-n> <C-w><Down>
