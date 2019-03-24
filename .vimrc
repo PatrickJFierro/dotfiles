@@ -27,6 +27,7 @@ let NERDTreeShowHidden=1
 map <Space> <Leader>
 nnoremap <Leader>t :TagbarToggle<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>p :FZF<CR>
 
 " Colemak Hotkeys
 for i in range(97,122)
