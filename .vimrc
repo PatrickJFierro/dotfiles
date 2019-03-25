@@ -3,17 +3,24 @@ set nocompatible
 " Plugins
 call plug#begin('~/.vim/vim-plug-plugins')
 
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'valloric/youcompleteme'
+Plug 'sirver/ultisnips'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'majutsushi/tagbar'
 Plug 'morhetz/gruvbox'
 
 call plug#end()
+
+" Airline Settings
+let g:airline_powerline_fonts=1
+let g:airline_theme='simple'
 
 " Syntastic settings
 let g:syntastic_check_on_open=1
@@ -22,6 +29,11 @@ let g:syntastic_enable_signs=1
 " NerdTree Settings
 let NERDTreeMinimalUI=1
 let NERDTreeShowHidden=1
+
+" UltiSnips Settings
+" let g:UltiSnipsExpandTrigger="<CR>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
 " Hotkeys
 map <Space> <Leader>
