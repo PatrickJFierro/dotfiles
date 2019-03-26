@@ -14,6 +14,7 @@ Plug 'valloric/youcompleteme'
 Plug 'sirver/ultisnips'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'yggdroot/indentLine'
 Plug 'morhetz/gruvbox'
 
 call plug#end()
@@ -21,10 +22,6 @@ call plug#end()
 " Airline Settings
 let g:airline_powerline_fonts=1
 let g:airline_theme='simple'
-
-" Syntastic settings
-let g:syntastic_check_on_open=1
-let g:syntastic_enable_signs=1
 
 " NerdTree Settings
 let NERDTreeMinimalUI=1
