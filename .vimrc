@@ -33,6 +33,9 @@ let NERDTreeShowHidden=1
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
+" Auto-Pairs Settings
+let g:AutoPairsShortcutJump = '<M-1>'
+
 " Hotkeys
 map <Space> <Leader>
 nnoremap <Leader>T :TagbarToggle<CR>
