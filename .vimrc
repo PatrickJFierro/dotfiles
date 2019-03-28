@@ -120,3 +120,5 @@ let g:gruvbox_invert_selection=0
 set background=dark
 
 colorscheme gruvbox
+
+highlight VertSplit guifg=#665c54 guibg=#665c54
