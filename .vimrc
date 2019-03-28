@@ -99,6 +99,7 @@ set shiftwidth=4
 set expandtab
 set smarttab
 
+set hidden
 set laststatus=2
 set incsearch
 set hlsearch
