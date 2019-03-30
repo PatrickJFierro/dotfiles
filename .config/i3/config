@@ -170,3 +170,6 @@ bindsym $mod+p mode "resize"
 bar {
         status_command i3status
 }
+
+bindsym $mod+Shift+greater move container to output right
+bindsym $mod+Shift+less move container to output left
