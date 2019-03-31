@@ -134,6 +134,7 @@ client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color       
 
 # Bar Settings
 bar {
+    position top
     status_command i3status
     colors {
         background $bg-color
