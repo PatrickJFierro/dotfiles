@@ -1,3 +1,4 @@
+# ==================== GLOBAL ==================== #
 set $mod Mod4
 
 # Title Bar Font
@@ -141,6 +142,10 @@ bar {
         urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
     } 
 }
+
+# Gap Settings
+gaps inner 10
+gaps outer 10
 
 # ==================== INTEGRATIONS ==================== #
 
