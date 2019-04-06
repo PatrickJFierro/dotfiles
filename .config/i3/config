@@ -159,7 +159,7 @@ exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/Rainy-Street-Pastel.jpg
 # ==================== INTEGRATIONS ==================== #
 
 # Compton 
-exec --no-startup-id compton -cCFb --backend glx --vsync opengl
+exec_always --no-startup-id compton --backend glx --vsync 
 
 # Plasma
 exec --no-startup-id wmctrl -c Plasma
