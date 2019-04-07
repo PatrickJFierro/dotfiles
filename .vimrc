@@ -54,10 +54,30 @@ nnoremap <M-n> <Down>
 nnoremap <M-e> <Up>
 nnoremap <M-i> <Right>
 
+vnoremap <M-h> <Left>
+vnoremap <M-n> <Down>
+vnoremap <M-e> <Up>
+vnoremap <M-i> <Right>
+
+onoremap <M-h> <Left>
+onoremap <M-n> <Down>
+onoremap <M-e> <Up>
+onoremap <M-i> <Right>
+
 nnoremap <Leader>h <Left>
 nnoremap <Leader>n <Down>
 nnoremap <Leader>e <Up>
 nnoremap <Leader>i <Right>
+
+vnoremap <Leader>h <Left>
+vnoremap <Leader>n <Down>
+vnoremap <Leader>e <Up>
+vnoremap <Leader>i <Right>
+
+onoremap <Leader>h <Left>
+onoremap <Leader>n <Down>
+onoremap <Leader>e <Up>
+onoremap <Leader>i <Right>
 
 nnoremap <C-h> <C-w><Left>
 nnoremap <C-n> <C-w><Down>
