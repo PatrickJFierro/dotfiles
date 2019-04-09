@@ -1,5 +1,3 @@
-set nocompatible
-
 " Plugins
 call plug#begin('~/.vim/vim-plug-plugins')
 
@@ -12,14 +10,15 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'valloric/youcompleteme'
 Plug 'sirver/ultisnips'
+Plug 'jiangmiao/auto-pairs'
+Plug 'yggdroot/indentLine'
+Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
-Plug 'jiangmiao/auto-pairs'
-Plug 'yggdroot/indentLine'
-Plug 'morhetz/gruvbox'
 
 call plug#end()
 
