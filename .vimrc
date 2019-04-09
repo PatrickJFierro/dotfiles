@@ -12,6 +12,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'valloric/youcompleteme'
 Plug 'sirver/ultisnips'
+Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
@@ -85,8 +86,6 @@ nnoremap <C-h> <C-w><Left>
 nnoremap <C-n> <C-w><Down>
 nnoremap <C-e> <C-w><Up>
 nnoremap <C-i> <C-w><Right>
-
-filetype plugin indent on
 
 " Hard mode
 let g:HardModeEnabled=1
@@ -163,16 +162,10 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-set smarttab
-
 set hidden
-set laststatus=2
-set incsearch
 set hlsearch
-
 set encoding=UTF-8
-
-syntax on
+set scrolloff=10
 
 " Appearance Settings
 set termguicolors
