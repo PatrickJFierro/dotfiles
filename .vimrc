@@ -1,4 +1,5 @@
-" Plugins
+" ==================== PLUGINS ==================== "
+
 call plug#begin('~/.vim/vim-plug-plugins')
 
 Plug 'vim-airline/vim-airline'
@@ -36,14 +37,15 @@ let NERDTreeMinimalUI=1
 let NERDTreeShowHidden=1
 
 " UltiSnips Settings
-" let g:UltiSnipsExpandTrigger="<CR>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
 " Auto-Pairs Settings
 let g:AutoPairsShortcutJump = '<M-1>'
 
-" Hotkeys
+
+" ==================== HOTKEYS ==================== "
+
 map <Space> <Leader>
 nnoremap <Leader>T :TagbarToggle<CR>
 nnoremap <Leader>N :NERDTreeToggle<CR>
@@ -147,7 +149,9 @@ endfunction
 
 call EnableHardMode()
 
-" Vim Settings
+
+" ==================== VIM SETTINGS ==================== "
+
 set ttimeout
 augroup FastEscape
     autocmd!
