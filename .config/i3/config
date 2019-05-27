@@ -1,3 +1,7 @@
+# ==================== DISPLAY ==================== #
+exec xrandr --output DVI-D-0 --scale 1.5x1.5
+
+
 # ==================== GLOBAL ==================== #
 set $mod Mod4
 
@@ -134,20 +138,6 @@ client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-col
 client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color $bg-color $bg-color
 client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color          $bg-color  $bg-color
 
-# Bar Settings
-bar {
-    position top
-    status_command i3status
-    colors {
-        background $bg-color
-        separator #757575
-        # Bar Settings     Border             Background         Text
-        focused_workspace  $bg-color          $bg-color          $text-color
-        inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-        urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-    } 
-}
-
 # Gap Settings
 gaps inner 10
 gaps outer 10
@@ -163,6 +153,9 @@ exec_always --no-startup-id compton --backend glx --vsync
 
 # Plasma
 exec --no-startup-id wmctrl -c Plasma
+
+# Polybar
+exec_always --no-startup-id ~/.config/i3/polybar.sh
 
 # Window Exceptions
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
