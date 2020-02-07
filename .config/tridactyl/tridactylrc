@@ -1,0 +1,8 @@
+"
+" Colemak Keybindings
+"
+
+bind i scrollpx 50
+bind I forward
+bind n scrollline 10
+bind e scrollline -10
