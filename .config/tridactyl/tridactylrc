@@ -3,6 +3,7 @@
 " ==================================================
 
 sanitise tridactyllocal tridactylsync
+set theme dark
 
 " ==================================================
 " Hint Mode Settings
@@ -16,7 +17,12 @@ set hintchars hneiarstdlpufywmckv
 " Colemak Keybindings
 " ==================================================
 
-bind i scrollpx 50
-bind I forward
-bind e scrollline -10
+bind h scrollpx -50
 bind n scrollline 10
+bind e scrollline -10
+bind i scrollpx 50
+
+bind H backward
+bind N tabprev
+bind E tabnext
+bind I forward
