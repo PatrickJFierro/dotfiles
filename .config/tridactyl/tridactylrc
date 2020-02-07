@@ -19,14 +19,17 @@ set hintchars hneiarstdlpufywmckv
 " ==================================================
 
 bind h scrollpx -50
-bind n scrollline 10
-bind e scrollline -10
+bind n scrollline 20
+bind e scrollline -20
 bind i scrollpx 50
 
-bind H backward
-bind N tabprev
-bind E tabnext
-bind I forward
+bind H tabprev
+bind N scrollpage 1
+bind E scrollpage -1
+bind I tabnext
+
+bind { back
+bind } forward
 
 " ==================================================
 " Usability Workarounds (Potentially Insecure)
