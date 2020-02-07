@@ -18,10 +18,10 @@ set hintchars hneiarstdlpufywmckv
 " Colemak Keybindings
 " ==================================================
 
-bind h scrollpx -50
+bind h scrollpx -100
 bind n scrollline 15
 bind e scrollline -15
-bind i scrollpx 50
+bind i scrollpx 100
 
 bind H tabprev
 bind N scrollpage 1
