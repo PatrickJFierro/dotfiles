@@ -15,7 +15,7 @@ set hintnames short
 set hintchars hneiarstdlpufywmckv
 
 " ==================================================
-" Colemak Keybindings
+" Keybindings (Colemak)
 " ==================================================
 
 bind h scrollpx -100
@@ -30,6 +30,9 @@ bind I tabnext
 
 bind { back
 bind } forward
+
+" Reenable conventional find
+unbind <C-f>
 
 " ==================================================
 " Usability Workarounds (Potentially Insecure)
