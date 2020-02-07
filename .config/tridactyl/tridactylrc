@@ -4,6 +4,7 @@
 
 sanitise tridactyllocal tridactylsync
 set theme dark
+set smoothscroll true
 
 " ==================================================
 " Hint Mode Settings
