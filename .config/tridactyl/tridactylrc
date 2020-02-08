@@ -28,6 +28,9 @@ bind N scrollpage 1
 bind E scrollpage -1
 bind I tabnext
 
+bind k fillcmdline bmarks
+bind K fillcmdline bmarks -t
+
 bind { back
 bind } forward
 
