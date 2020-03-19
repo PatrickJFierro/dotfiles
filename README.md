@@ -6,20 +6,20 @@ environment with accompanying build scripts for ease of use.
 
 # Configured Tools/Dependencies
 ZSH
-    - Shell
+- Shell
 Vim/Neovim
-    - Text editor
+- Text editor
 Ranger
-    - Terminal file explorer
+- Terminal file explorer
 Tridactyl
-    - Vimlike keybindings for Firefox
+- Vimlike keybindings for Firefox
 Tmux
-    - Terminal multiplexer
+- Terminal multiplexer
 ColorLS
-    - Ruby based 'ls' wrapper
+- Ruby based 'ls' wrapper
 Powerline
-    - Improved status bar for Vim/Tmux
+- Improved status bar for Vim/Tmux
 FZF
-    - Fuzzy Finder
+- Fuzzy Finder
 Silver Searcher
 - Fast search program
