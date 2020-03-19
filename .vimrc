@@ -93,62 +93,6 @@ nnoremap <C-n> <C-w><Down>
 nnoremap <C-e> <C-w><Up>
 nnoremap <C-i> <C-w><Right>
 
-" Hard mode
-let g:HardModeEnabled=1
-command! ToggleHardMode call ToggleHardMode()
-
-function! ToggleHardMode()
-    if g:HardModeEnabled
-        call DisableHardMode()
-    else
-        call EnableHardMode()
-    endif
-endfunction
-
-function! EnableHardMode()
-    let g:HardModeEnabled=1
-
-    set mouse=""
-
-    nnoremap <Left> <Nop>
-    nnoremap <Down> <Nop>
-    nnoremap <Up> <Nop>
-    nnoremap <Right> <Nop>
-
-    vnoremap <Left> <Nop>
-    vnoremap <Down> <Nop>
-    vnoremap <Up> <Nop>
-    vnoremap <Right> <Nop>
-
-    inoremap <Left> <Nop>
-    inoremap <Down> <Nop>
-    inoremap <Up> <Nop>
-    inoremap <Right> <Nop>
-endfunction
-
-function! DisableHardMode()
-    let g:HardModeEnabled=0
-
-    set mouse="a"
-
-    nnoremap  <Left> <Left>
-    nnoremap  <Down> <Down>
-    nnoremap  <Up> <Up>
-    nnoremap  <Right> <Right>
-
-    vnoremap  <Left> <Left>
-    vnoremap  <Down> <Down>
-    vnoremap  <Up> <Up>
-    vnoremap  <Right> <Right>
-
-    inoremap  <Left> <Left>
-    inoremap  <Down> <Down>
-    inoremap  <Up> <Up>
-    inoremap  <Right> <Right>
-endfunction
-
-call EnableHardMode()
-
 
 " ==================== VIM SETTINGS ==================== "
 
