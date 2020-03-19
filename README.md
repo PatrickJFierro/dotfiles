@@ -5,21 +5,21 @@ like to make each configuration environment agnostic or segregated by intended
 environment with accompanying build scripts for ease of use.
 
 # Configured Tools/Dependencies
-- ZSH
+ZSH
     - Shell
-- Vim/Neovim
+Vim/Neovim
     - Text editor
-- Ranger
+Ranger
     - Terminal file explorer
-- Tridactyl
+Tridactyl
     - Vimlike keybindings for Firefox
-- Tmux
+Tmux
     - Terminal multiplexer
-- ColorLS
+ColorLS
     - Ruby based 'ls' wrapper
-- Powerline
+Powerline
     - Improved status bar for Vim/Tmux
-- FZF
+FZF
     - Fuzzy Finder
-- Silver Searcher
-    - Fast search program
+Silver Searcher
+- Fast search program
