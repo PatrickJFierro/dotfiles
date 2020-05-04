@@ -25,6 +25,7 @@ Plug 'tpope/vim-dadbod'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
+Plug 'tridactyl/vim-tridactyl'
 
 call plug#end()
 
