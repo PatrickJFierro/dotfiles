@@ -4,6 +4,7 @@ call plug#begin('~/.vim/vim-plug-plugins')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ayu-theme/ayu-vim'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
@@ -32,6 +33,10 @@ call plug#end()
 " Airline Settings
 let g:airline_powerline_fonts=1
 let g:airline_theme='simple'
+
+" Ayu Settings
+let ayucolor="dark"
+colorscheme ayu
 
 " NerdTree Settings
 let NERDTreeMinimalUI=1
@@ -122,12 +127,6 @@ set scrolloff=10
 
 " Appearance Settings
 set termguicolors
-let g:gruvbox_sign_column='dark0_hard'
-let g:gruvbox_contrast_dark='hard'
-let g:gruvbox_italic=1
-let g:gruvbox_invert_selection=0
 set background=dark
-
-colorscheme gruvbox
 
 highlight VertSplit guifg=#665c54 guibg=#665c54
