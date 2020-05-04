@@ -128,5 +128,6 @@ set scrolloff=10
 " Appearance Settings
 set termguicolors
 set background=dark
+hi Normal guibg=NONE ctermbg=NONE
 
 highlight VertSplit guifg=#665c54 guibg=#665c54
