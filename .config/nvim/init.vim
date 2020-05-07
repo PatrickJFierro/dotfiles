@@ -11,6 +11,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'valloric/youcompleteme'
 Plug 'sirver/ultisnips'
+Plug 'dense-analysis/ale'
 Plug 'machakann/vim-highlightedyank'
 Plug 'timakro/vim-searchant'
 Plug 'yggdroot/indentLine'
@@ -43,6 +44,9 @@ let NERDTreeShowHidden=1
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
+" Ale Settings
+let g:ale_fixers = ['prettier', 'eslint']
+
 " Auto-Pairs Settings
 let g:AutoPairsShortcutJump = '<M-1>'
 
@@ -50,9 +54,9 @@ let g:AutoPairsShortcutJump = '<M-1>'
 " ==================== HOTKEYS ==================== "
 
 map <Space> <Leader>
-nnoremap <Leader>T :TagbarToggle<CR>
-nnoremap <Leader>N :NERDTreeToggle<CR>
 nnoremap <Leader>p :FZF<CR>
+nnoremap <Leader>N :NERDTreeToggle<CR>
+nnoremap <Leader>F :ALEFix<CR>
 
 " Colemak Hotkeys
 for i in range(97,122)
