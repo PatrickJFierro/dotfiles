@@ -12,7 +12,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'valloric/youcompleteme'
 Plug 'sirver/ultisnips'
-Plug 'morhetz/gruvbox'
 Plug 'machakann/vim-highlightedyank'
 Plug 'timakro/vim-searchant'
 Plug 'yggdroot/indentLine'
