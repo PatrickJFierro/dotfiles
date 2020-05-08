@@ -25,12 +25,13 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tridactyl/vim-tridactyl'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
 " Airline Settings
 let g:airline_powerline_fonts=1
-let g:airline_theme='simple'
+let g:airline_theme='serene'
 
 " Ayu Settings
 let ayucolor="dark"
